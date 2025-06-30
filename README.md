@@ -80,7 +80,7 @@ shell/
 1. **Clone or download the project**
 2. **Navigate to the shell directory**
    ```bash
-   cd shell
+   cd SKULL-SHELL
    ```
 
 3. **Compile the project**
@@ -154,7 +154,6 @@ Once started, Skull Shell provides an interactive prompt showing your username a
 ```bash
 make          # Standard build
 make clean    # Clean object files
-make debug    # Debug build (if configured)
 ```
 
 ### Code Style
