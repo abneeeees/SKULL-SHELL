@@ -18,7 +18,7 @@ int exit_shell(char **args) {
     if (args[0] == NULL) {
         perror("No command");
     } else {
-        ; // exits the shell
+        exit(0) ; // exits the shell
     }
 
     return 1;
