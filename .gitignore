@@ -1,0 +1,6 @@
+commands.o
+executer.o
+main.o
+parser.o
+utils.o
+skull
