@@ -11,13 +11,15 @@ void main_loop(void) {
     int status = 1;
 
     do {
-        printf("> ");
-        char* username = getenv("USER");  //getting username of device
+        char *username = getenv("USER");  //getting username of device
         char cd[1024];
-        getcwd(cd , sizeof(cd));  // getting current directory of device
+        getcwd(cd, sizeof(cd));  // getting current directory of device
 
 
-        printf("%s " , username  ); // printing username / current directory
+        printf( YELLOW "%s " RESET , username  ); // printing username / current directory
+        printf(CYAN"[ %s ] " RESET , cd );
+        printf(GREEN">"RESET);
+        printf(GREEN"> "RESET);
 
         line = get_line();
         args = parser(line);

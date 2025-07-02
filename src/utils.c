@@ -34,7 +34,7 @@ int pwd_shell(char **args) {
         //calling getcwd() function that gives current working directory 
         getcwd(cwd, sizeof(cwd)); 
         // printing current working directory
-        printf("%s'\n" , cwd );
+        printf(MAGENTA "%s'\n" RESET , cwd );
     }
 
     return 1;
@@ -59,7 +59,7 @@ int echo_commands(char **args) {
     } else{
         int i=1;
         while(args[i] != NULL){
-            printf("%s " , args[i]) ;
+            printf(MAGENTA "%s " RESET , args[i]) ;
             i++ ;
         }
         printf("\n") ;
