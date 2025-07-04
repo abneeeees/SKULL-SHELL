@@ -18,7 +18,11 @@ int exit_shell(char **args) {
     if (args[0] == NULL) {
         perror("No command");
     } else {
-        exit(0) ; // exits the shell
+        int i=1;
+        while (i<=4){
+            exit(0) ; // exits the shell
+            i++ ;
+        } 
     }
 
     return 1;
