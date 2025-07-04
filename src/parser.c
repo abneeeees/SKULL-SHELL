@@ -1,4 +1,5 @@
 #include <parser.h>
+#include <memory.h>
 
 char *get_line(void) {
     int buffer_size = 1024;
@@ -14,10 +15,13 @@ char *get_line(void) {
 
     int c;
     while (1) {
+        cyan();
         c = getchar();  // Reads one character or EOF (-1)
+        reset();
 
         if (c == EOF || c == '\n') {           // If end of input or new line
             buffer[position] = '\0';           // Null-terminate the string
+            store_history(buffer);
             return buffer;
         } else {
             buffer[position] = c;              // Store the character in buffer
