@@ -5,5 +5,5 @@ parser.o
 utils.o
 memory.o
 skull
-commands.txt
+command.txt
 
