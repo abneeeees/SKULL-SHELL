@@ -1,7 +1,7 @@
 
 # 🦴 Skull Shell
 
-![SKULL](images/shell.png)
+![SKULL](images/skull.png)
 
 
 **Skull Shell** is a feature-rich custom shell written in **C**, designed for developers and power users who want more control over their command-line experience. Built with modularity and extensibility in mind, Skull Shell provides essential shell functionality with room for advanced features.
