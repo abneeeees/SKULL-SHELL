@@ -3,4 +3,7 @@ executer.o
 main.o
 parser.o
 utils.o
+memory.o
 skull
+commands.txt
+
