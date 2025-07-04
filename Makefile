@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude
 
-SRC = src/main.c src/parser.c src/commands.c src/executer.c src/utils.c 
+SRC = src/main.c src/parser.c src/commands.c src/executer.c src/utils.c src/memory.c
 OBJ = $(SRC:.c=.o)
 TARGET = skull
 
