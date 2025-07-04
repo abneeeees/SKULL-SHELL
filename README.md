@@ -54,16 +54,20 @@
 
 ```
 shell/
+├── images/           # images and ascii art
+│   ├── skull.png     # demo image of skull
 ├── include/           # Header files
 │   ├── commands.h     # Command declarations
 │   ├── executer.h     # Command execution
 │   ├── main.h         # Main includes and definitions
+|   ├── memory.h       # commands history
 │   ├── parser.h       # Input parsing
 │   └── utils.h        # Utility functions
 ├── src/               # Source files
 │   ├── commands.c     # Built-in command implementations
 │   ├── executer.c     # Command execution logic
 │   ├── main.c         # Main shell loop
+|   ├── memory.h       # store and show history
 │   ├── parser.c       # Input parsing and tokenization
 │   └── utils.c        # Utility functions
 ├── makefile           # Build configuration
@@ -180,20 +184,12 @@ Contributions are welcome! Areas for improvement:
 
 ## 📝 License
 
-This project is open source. Feel free to use, modify, and distribute.
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
----
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-## 🎯 Roadmap
-
-- [ ] Command history with arrow key navigation
-- [ ] Tab completion for commands and files
-- [ ] Configuration file support
-- [ ] Pipe and redirection operators
-- [ ] Background process management
-- [ ] AI-assisted command suggestions
-- [ ] Music playback integration
-- [ ] Enhanced debugging tools
+You are free to use, modify, and distribute this software under the terms of the GPLv3.  
+See the [LICENSE](./LICENSE) file for full details.
 
 ---
 
