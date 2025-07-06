@@ -44,9 +44,10 @@ int commd_execute(char **args) {
         // Compare first argument to built-in keywords
         // strcmp(str1, str2) == 0 means strings are equal
 
-        if (strcmp(args[0], builtin[i]) == 0) {
-            // Call the corresponding built-in function
-            return (*builtin_func[i])(args);
+        if (strcmp(args[0], builtin[i]) == 0 && args[1]!=NULL && strcmp(args[1], "-h")==0) {
+            printf("/n%s/n" , builtin_helps[i]);
+        } else if (strcmp(args[0] , builtin[i])==0){
+            return builtin_func[i](args);
         }
     }
 
