@@ -4,7 +4,5 @@
 #include <main.h>
 
 void store_history(char *line);
-//void up(FILE *ptr , char *line , int count);
-//void down(FILE *ptr , char *line , int count);
-
+// char *show_history(FILE *ptr);
 #endif
