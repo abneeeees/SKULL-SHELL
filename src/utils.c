@@ -18,7 +18,7 @@ int exit_shell(char **args) {
     if (args[0] == NULL) {
         perror("No command");
     } else{
-            exit(0) ; // exits the shell
+            return(0) ; // exits the shell
     }
 
     return 1;
@@ -76,9 +76,10 @@ int help(char **args){
         for (int i=0 ; i<builtin_size() ; i++){
             if (strcmp(args[1] , builtin[i])==0){
                 printf("%s\n" , builtin_helps[i]) ;
-            }
+                return (1);
+            } 
         }
+        printf(RED " No such builtin command exist. Try [Command] -h or [Command] --help\n" RESET);
     }
-
     return 1;
 }
