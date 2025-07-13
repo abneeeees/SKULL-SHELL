@@ -81,5 +81,6 @@ int help(char **args){
         }
         printf(RED " No such builtin command exist. Try [Command] -h or [Command] --help\n" RESET);
     }
+    
     return 1;
 }
