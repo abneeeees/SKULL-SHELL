@@ -6,7 +6,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/types.h>
-
+#include <time.h>
 
 #define RED     "\x1b[31m"
 #define GREEN   "\x1b[32m"
@@ -26,5 +26,6 @@
 #define gray()    printf("\033[1;30m")  // Bright black = gray
 #define reset()   printf("\033[0m")
 
- 
+
+
 #endif

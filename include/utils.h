@@ -11,5 +11,6 @@ int exit_shell(char **args);
 int pwd_shell(char **args);
 int clear(char **args);
 int echo_commands(char **args);
+int help(char **agrs);
 
 #endif 

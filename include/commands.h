@@ -8,6 +8,7 @@ int exit_shell(char **args);
 int echo_commands(char **args);
 int clear(char **args);
 int pwd_shell(char **args);
+int help(char **agrs);
 
 extern char *builtin[] ;
 extern int (*builtin_func[])(char**);
