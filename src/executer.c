@@ -13,7 +13,7 @@ int checking_fork(char **args){
     //child process
     if (execvp(args[0] , args) == -1){
         // Command not found in built-ins or external
-        printf(RED "Error: wrong command\n" RESET);}
+        printf(RED " Error: wrong command\n" RESET);}
     } else if (pid >0){
         // Parent waits
         waitpid(pid, &status, 0);
