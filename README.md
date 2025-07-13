@@ -24,7 +24,7 @@
 - `echo` - Display text
 - `clear` - Clear terminal screen
 - `exit` - Exit the shell
-- `help` - Show help information
+- `-h` - Show help information
 
 ### External Commands (All System Commands Supported!)
 **File Operations**: `ls`, `cat`, `touch`, `cp`, `mv`, `rm`, `mkdir`, `rmdir`, `head`, `tail`, `chmod`, `chown`, `find`, `locate`
