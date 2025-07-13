@@ -4,10 +4,10 @@
 // Initializing command functions
 int cd(char **args);
 int exit_shell(char **args);
-int echo_commands(char **agrs);
+int echo_commands(char **args);
 int clear(char **args);
 int pwd_shell(char **args);
-int alias(char **args);
+int help(char **args);
 
 char *builtin[] = {
     "cd",
@@ -15,6 +15,7 @@ char *builtin[] = {
     "echo",
     "clear",
     "pwd",
+    "-h",
     "alias",
     "unalias",
     "export",
@@ -119,7 +120,19 @@ int (*builtin_func[])(char **) = {
     &echo_commands,
     &clear,
     &pwd_shell,
-    &alias
+    &help,
+    NULL,//alias
+    NULL, // unalias - not implemented yet
+    NULL, // export - not implemented yet
+    NULL, // unset - not implemented yet
+    NULL, // read - not implemented yet
+    NULL, // set - not implemented yet
+    NULL, // source - not implemented yet
+    NULL, // jobs - not implemented yet
+    NULL, // fg - not implemented yet
+    NULL, // bg - not implemented yet
+    NULL, // kill - not implemented yet
+    NULL, // wait - not implemented yet
 };
 
 int builtin_size(void){
