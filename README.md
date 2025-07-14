@@ -1,5 +1,5 @@
 
-# 🦴 Skull Shell
+# 💀 Skull Shell
 
 ![SKULL](images/skull.png)
 
